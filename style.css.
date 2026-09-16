@@ -1,0 +1,186 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 16px/1.6 Arial, sans-serif;
+  color: #172027;
+}
+
+header {
+  background: #111820;
+  color: white;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  line-height: 1.1;
+}
+
+.brand span {
+  color: #f4c94e;
+}
+
+.brand small {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-top: 7px;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero {
+  padding: 60px 9%;
+  background: linear-gradient(120deg, #252b30, #10151a);
+  color: white;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 64px);
+  line-height: 1.05;
+  margin: 10px 0;
+}
+
+.hero p {
+  max-width: 650px;
+}
+
+.eyebrow {
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  background: #f4c94e;
+  color: #171b1f;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 12px 17px;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+
+.products {
+  padding: 55px 7%;
+}
+
+.section-head h2,
+.tips h2 {
+  font-size: 34px;
+  margin: 5px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #e1e5e8;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mini-shorts {
+  height: 135px;
+  width: 100%;
+  background: #f1f3f4;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+}
+
+.mini-shorts span {
+  background: #171b20;
+  color: white;
+  padding: 30px 45px;
+  border-radius: 8px 8px 25px 25px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.product-card h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.product-card p {
+  margin: 8px 0;
+}
+
+.disclosure {
+  font-size: 12px;
+  color: #68737b;
+  margin-top: 22px;
+}
+
+.tips {
+  background: #f3f5f6;
+  padding: 45px 7%;
+}
+
+.tip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.tip-grid article {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+}
+
+footer {
+  padding: 24px 7%;
+  font-size: 12px;
+  color: #68737b;
+}
+
+@media (max-width: 720px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .grid,
+  .tip-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .products,
+  .tips {
+    padding: 38px 6%;
+  }
+
+  nav {
+    gap: 18px;
+  }
+}
